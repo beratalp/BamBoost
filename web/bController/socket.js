@@ -2,18 +2,14 @@ const THRESHOLD = 6400;
 
 function setup(){
     let ws = new WebSocket("ws://"+ document.location.hostname + ":5678");
-    output = document.createElement("ul");
+    let output = document.getElementById("value")
     ws.onopen = function(e){
         console.log("Connected.");
     };
     ws.onmessage = function(e){
-        var messages = document.getElementsByTagName("ul")[0],
-            message = document.createElement("li"),
-            content = document.createTextNode(e.data);
-        message.appendChild(content);
-        messages.appendChild(message);
+        console.log(e)
+        output.innerHTML = e.data;
     };
-    document.body.appendChild(messages);
 }
 
 
