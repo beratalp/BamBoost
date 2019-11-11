@@ -1,7 +1,7 @@
 const THRESHOLD = 6400;
 
 function setup(){
-    let ws = new WebSocket("ws://localhost:5678");
+    let ws = new WebSocket("ws://"+ document.location.hostname + ":5678");
     output = document.createElement("ul");
     ws.onopen = function(e){
         console.log("Connected.");

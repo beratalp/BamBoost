@@ -7,7 +7,7 @@ import asyncio
 
 HTTPPORT = 8080
 SOCKETPORT = 5678
-ADDRESS = "localhost"
+ADDRESS = "0.0.0.0"
 
 value = "0"
 
@@ -22,7 +22,7 @@ class Server:
         self.server_thread = threading.Thread(target=self.server.serve_forever)
         self.server_thread.daemon = True
 
-        self.websocket_server = websockets.serve(senddata, "localhost", SOCKETPORT)
+        self.websocket_server = websockets.serve(senddata, ADDRESS, SOCKETPORT)
 
     def start(self):
         self.server_thread.start()
