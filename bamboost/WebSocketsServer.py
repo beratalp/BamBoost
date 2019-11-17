@@ -22,5 +22,5 @@ class BamBoostWebSocketsServer:
     async def send_data(self, websocket, path):
         while True:
             await asyncio.wait([websocket.send(json.dumps(self.state))])
-            await asyncio.sleep(2)
+            await asyncio.sleep(0.5)
 

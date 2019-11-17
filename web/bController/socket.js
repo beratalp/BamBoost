@@ -8,7 +8,7 @@ function setup(){
     };
     ws.onmessage = function(e){
         console.log(e)
-        output.innerHTML = e.data;
+        output.innerHTML = JSON.parse(e.data)["value"];
     };
 }
 
