@@ -1,3 +1,7 @@
-p {
+p{
     display: inline
+}
+
+div.row{
+    border-bottom: 1px solid;
 }
