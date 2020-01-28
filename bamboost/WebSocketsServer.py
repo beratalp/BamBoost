@@ -8,7 +8,7 @@ import threading
 class BamBoostWebSocketsServer:
     def __init__(self):
         self.users = set()
-        self.state = {"value": 0}
+        self.state = {"pitch": 0, "roll": 0}
         self.websocket = websockets.serve(self.send_data, ADDRESS, SOCKETPORT)
         self.websocket_thread = threading.Thread(target=asyncio.get_event_loop().run_forever)
 
@@ -16,8 +16,9 @@ class BamBoostWebSocketsServer:
         asyncio.get_event_loop().run_until_complete(self.websocket)
         self.websocket_thread.start()
 
-    def set_value(self, value):
-        self.state["value"] = value
+    def set_value(self, pitch, roll):
+        self.state["pitch"] = pitch
+        self.state["roll"] = roll
 
     async def send_data(self, websocket, path):
         while True:

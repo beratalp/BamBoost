@@ -4,6 +4,7 @@ import http.server
 import os
 from bamboost import *
 
+
 class BamBoostHTTPServer:
     handler = http.server.SimpleHTTPRequestHandler
 
