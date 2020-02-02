@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96c10819-93ae-48df-8633-ddffec0cccdb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bamboost/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../bamboost/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bController.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bController.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +35,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -68,7 +73,9 @@
       <workItem from="1573486613883" duration="1300000" />
       <workItem from="1574339576118" duration="1138000" />
       <workItem from="1576491641351" duration="15000" />
-      <workItem from="1580222689247" duration="1466000" />
+      <workItem from="1580222689247" duration="2214000" />
+      <workItem from="1580458328888" duration="5601000" />
+      <workItem from="1580473693918" duration="821000" />
     </task>
     <servers />
   </component>
