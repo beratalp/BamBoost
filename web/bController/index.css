@@ -5,3 +5,12 @@ p{
 div.row{
     border-bottom: 1px solid;
 }
+
+.form-group.col-md-4 {
+    display: flex;
+}
+
+.form-group.col-lg-12{
+    display: flex;
+    flex: auto;
+}

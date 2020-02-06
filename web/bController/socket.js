@@ -14,6 +14,30 @@ function setup(){
         roll.innerHTML = JSON.parse(e.data)["roll"];
         cpu_temp.innerHTML = JSON.parse(e.data)["cpu_temp"];
     };
+
+    document.getElementById("defaults_button").onclick = setDefaults;
+
+}
+
+function sendInclinationData(){
+    let pitchAngle = document.getElementById("pitch_input").value;
+    let rollAngle = document.getElementById("roll_input").value;
+    if(pitchAngle === "" || rollAngle === ""){
+        alert("Pitch or Roll angle should not be empty.")
+    }
+    else{
+        let inclinationJSON = {
+            "pitch_angle":pitchAngle,
+            "roll_angle":rollAngle
+        };
+        console.log(inclinationJSON)
+    }
+}
+
+function setDefaults(){
+    document.getElementById("pitch_input").value = 0;
+    document.getElementById("roll_input").value = 0;
+    sendInclinationData();
 }
 
 setup();
