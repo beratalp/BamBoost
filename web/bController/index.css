@@ -1,16 +1,41 @@
-p{
+p {
     display: inline
 }
 
-div.row{
+div.row-bordered {
+@extend . row;
     border-bottom: 1px solid;
+}
+
+div.col-bordered {
+@extend . col;
+    border-left: 1px solid #607d8b;
 }
 
 .form-group.col-md-4 {
     display: flex;
+    align-items: baseline;
+
 }
 
-.form-group.col-lg-12{
+
+.form-group.col-lg-12 {
     display: flex;
     flex: auto;
 }
+
+
+@media (min-width: 992px) {
+    .col-md-6:not(:first-child) {
+        border-left: 1px solid #607d8b;
+    }
+    .col-md-6:not(:last-child) {
+        border-right: 1px solid #607d8b;
+        margin-right: -1px;
+    }
+}
+
+
+
+
+
