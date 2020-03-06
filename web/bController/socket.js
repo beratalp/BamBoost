@@ -5,6 +5,7 @@ function setup(){
     let pitch = document.getElementById("pitch");
     let roll = document.getElementById("roll");
     let cpu_temp = document.getElementById("cpu_temp");
+    let out_temp = document.getElementById("out_temp");
     ws.onopen = function(e){
         console.log("Connected.");
     };
@@ -13,6 +14,7 @@ function setup(){
         pitch.innerHTML = JSON.parse(e.data)["pitch"];
         roll.innerHTML = JSON.parse(e.data)["roll"];
         cpu_temp.innerHTML = JSON.parse(e.data)["cpu_temp"];
+        out_temp.innerHTML = JSON.parse(e.data)["out_temp"];
     };
 
     document.getElementById("defaults_button").onclick = setDefaults;
