@@ -16,14 +16,14 @@
             <img src="logo.png" class="img-fluid" alt="text">
         </div>
         <ul class="list-unstyled components">
-            <li class="active">
-                <a href="#">
+            <li class="active side-item-dashboard">
+                <a href="javascript:openDashboard()">
                     <i class="fas fa-tachometer-alt"></i>
                     Dashboard
                 </a>
             </li>
-            <li>
-                <a href="#">
+            <li class="side-item-manual">
+                <a href="javascript:openManualControl()">
                     <i class="fas fa-gamepad"></i>
                     Manual Control
                 </a>
@@ -124,7 +124,7 @@
     </div>
 </div>
 </body>
-<script src="socket.js"></script>
+<script src="dashboard.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
