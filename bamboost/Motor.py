@@ -1,5 +1,6 @@
 import RPi.GPIO as GPIO
 import time
+import math
 
 
 class LinearMotor:
@@ -18,6 +19,7 @@ class LinearMotor:
 
     def negative(self, duration, speed):
         self.__reset__()
+        speed = round(speed, 2)
         pwm = GPIO.PWM(self.pin1, 2000)
         pwm.start(speed)
         time.sleep(duration)
@@ -26,6 +28,7 @@ class LinearMotor:
 
     def positive(self, duration, speed):
         self.__reset__()
+        speed = round(speed, 2)
         pwm = GPIO.PWM(self.pin2, 2000)
         pwm.start(speed)
         time.sleep(duration)
